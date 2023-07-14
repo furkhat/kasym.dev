@@ -1,0 +1,43 @@
+html * {
+  font-family: "mono monospace";
+}
+.container {
+  padding-top: 60px;
+}
+
+#home a {
+  text-decoration: none;
+  font-size: 24px;
+}
+
+.sidebar{
+  position: fixed;
+  display: block;
+}
+
+#home {
+  letter-spacing: -1px;
+  margin-bottom: 20px;
+}
+
+a, a:visited {
+  color: #000;
+  outline: 0;
+}
+
+a:hover, a:focus {
+  color: #003fff;
+}
+
+nav ul {
+  list-style-type: none;
+  padding-left: 2px;
+}
+
+nav ul a {
+  text-decoration: none;
+}
+
+div.contents {
+  padding-top: 11px;
+}
