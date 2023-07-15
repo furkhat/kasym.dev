@@ -1,23 +1,28 @@
 html * {
-  font-family: "mono monospace";
+  font-family: "mono";
 }
 .container {
-  padding-top: 60px;
+  padding-top: 3rem;
+}
+
+#home {
+  letter-spacing: -0.1rem;
+  line-height: 1.5rem;
+  word-spacing: -0.5rem;
 }
 
 #home a {
   text-decoration: none;
-  font-size: 24px;
+  font-size: 1.5rem;
 }
 
-.sidebar{
-  position: fixed;
-  display: block;
+nav ul {
+  list-style-type: none;
+  font-weight: 800;
 }
 
-#home {
-  letter-spacing: -1px;
-  margin-bottom: 20px;
+nav ul a {
+  text-decoration: none;
 }
 
 a, a:visited {
@@ -29,15 +34,43 @@ a:hover, a:focus {
   color: #003fff;
 }
 
-nav ul {
-  list-style-type: none;
-  padding-left: 2px;
+@media (min-width: 1000px) {
+  .container{
+    width: 80%;
+  }
 }
 
-nav ul a {
-  text-decoration: none;
+@media (min-width: 800px) {
+  .container{
+    width: 90%;
+  }
+  div.contents {
+    padding-top: 0.4rem;
+  }
+  .navcontainer{
+    position: fixed;
+    display: block;
+  }
+  nav ul {
+    padding-left: 0.2rem;
+  }
 }
 
-div.contents {
-  padding-top: 11px;
+@media (max-width: 800px) {
+  #home {
+    margin-bottom: 1rem;
+  }
+  div.contents {
+    width: 100% !important;
+    margin-left: auto !important;
+    margin-right: auto;
+  }
+  .navcontainer{
+    position: relative;
+    width: 100% !important;
+    text-align: center;
+  }
+  ul li {
+    display: inline;
+  }
 }
