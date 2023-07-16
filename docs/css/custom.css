@@ -8,12 +8,11 @@ html * {
 #home {
   letter-spacing: -0.1rem;
   line-height: 1.5rem;
-  word-spacing: -0.5rem;
 }
 
 #home a {
   text-decoration: none;
-  font-size: 1.5rem;
+  font-family: sans-serif;
 }
 
 nav ul {
@@ -41,6 +40,9 @@ a:hover, a:focus {
 }
 
 @media (min-width: 800px) {
+  #home {
+    font-size: 1.5rem;
+  }
   .container{
     width: 90%;
   }
@@ -58,6 +60,7 @@ a:hover, a:focus {
 
 @media (max-width: 800px) {
   #home {
+    font-size: 1.5rem;
     margin-bottom: 1rem;
   }
   div.contents {
@@ -72,5 +75,11 @@ a:hover, a:focus {
   }
   ul li {
     display: inline;
+  }
+}
+
+@media (max-width: 400px) {
+  #home {
+    font-size: 1.1rem;
   }
 }
