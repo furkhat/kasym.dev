@@ -1,0 +1,3768 @@
+<h5>Building Intuition for Triginometry Function Derrivatives.</h5>
+
+<p>Derivative of triginometric functions like tan(x) often are explained using product rule and a sequence of algebraic simplifications. Product rule is great but if you are looking for intuitive approach, read on.</p>
+
+<p>For better visual satisfaction I created interactive diagrams. Drag cursor over diagrams or tap on the screen.</p>
+
+<div>
+  <h6>Recalling some definitions</h6>
+
+  <p>Triangles are <b>similar</b> when they are scaled, flipped or rotated versions of each other.</p> 
+
+  <p class="u-text-center">
+    <svg
+      width="59mm"
+      height="65mm"
+      viewBox="0 0 59 65"
+      version="1.1"
+      id="triangles"
+      sodipodi:docname="same-angles.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="3.6714327"
+         inkscape:cx="123.65745"
+         inkscape:cy="135.50568"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+      <defs
+         id="defs2" />
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1">
+        <path
+           style="opacity:0.99;fill:none;stroke:#d8081d;stroke-width:0.8;stroke-linejoin:bevel;paint-order:markers fill stroke;stroke-opacity:1"
+           d="M 44,64.2 H 0"
+           id="triangles_Adjecent_1" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#32c209;stroke-width:0.8;stroke-linejoin:bevel;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 44,64.2 0,31.2"
+           id="triangles_Hypotenuse_1" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#2424e4;stroke-width:0.8;stroke-linejoin:bevel;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 0.5,64.2 V 31.2"
+           id="triangles_Opposite_1" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#2424e4;stroke-width:0.8;stroke-linejoin:bevel;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 44,64.2 H 58.2"
+           id="triangles_Adjecent_2" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#32c209;stroke-width:0.8;stroke-linejoin:bevel;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 44,65 58.2,45"
+           id="triangles_Hypotenuse_2" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#d8081d;stroke-width:0.8;stroke-linejoin:bevel;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 58.2,45 V 65"
+           id="triangles_Opposite_2" />
+      </g>
+    </svg>
+  </p>
+  <p>For example, two similar triangles above are scaled and flipped versions of each other.</p>
+
+  <p>Triginometry function produce same results for similar triangles.</p>
+
+  <p>A unit circle is a circle with radius of one and circumference of 2&times;π.</p>
+
+  <p>Radians describe angle as well as circumference within the angle. For example, 2&times;π &mdash; full circle and full circumference, π/4 &mdash; stright angle and quarter of circumference.</p>
+
+  <p>Here is a unit circle with sine and cosine for some angle x.</p>
+
+  <p class="u-text-center">
+    <svg
+      class="unit-circle"
+      width="142mm"
+      height="100mm"
+      viewBox="0 0 142 100"
+      version="1.1"
+      id="sinAndCos1"
+      sodipodi:docname="sin-and-cos.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="2.4601223"
+         inkscape:cx="277.22199"
+         inkscape:cy="159.13843"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer2" />
+      <defs
+         id="defs2">
+        <linearGradient
+           id="linearGradient1119"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop1117" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2973"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2971" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2936"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2934" />
+        </linearGradient>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1267"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1591"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1740"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5437"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5439"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5441"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+      </defs>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         style="display:inline">
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0,49.6 H 147.23539"
+           id="path7737" />
+        <circle
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           id="sinAndCos1Circle"
+           cx="47.3"
+           cy="49.6"
+           r="40" />
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 47.3,116 V 0"
+           id="path12080" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer2"
+         inkscape:label="trig funcs"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#32c209;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 47.405876,49.55135 34.738443,-19.999"
+           id="sinAndCos1Hypotenuse" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 81.833514,49.584522 V 29.528552"
+           id="sinAndCos1Opposite" />
+        <path
+           style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.3,49.6 H 81.296473"
+           id="sinAndCos1Adjecent" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+           id="sinAndCos1Arc"
+           sodipodi:type="arc"
+           sodipodi:cx="47.3"
+           sodipodi:cy="49.6"
+           sodipodi:rx="40"
+           sodipodi:ry="40"
+           sodipodi:start="5.7683132"
+           sodipodi:end="0"
+           sodipodi:arc-type="arc"
+           d="m 81.936918,29.896142 a 40.444,40.090286 0 0 1 5.243334,19.741401"
+           sodipodi:open="true" />
+        <circle
+           style="opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="path9379"
+           cx="47.3"
+           cy="9.644537"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="sinAndCos1HypotenusePoint"
+           cx="81.775681"
+           cy="29.58062"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="sinAndCos1AdjecentPoint"
+           cx="81.740677"
+           cy="49.6721"
+           r="1.0923429" />
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+           x="38.27932"
+           y="47.611694"
+           id="text10090"><tspan
+             sodipodi:role="line"
+             id="tspan10088"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.264583"
+             x="38.27932"
+             y="47.611694">(0;0)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="38.074238"
+           y="7.4727864"
+           id="text10090-6"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.264583"
+             x="38.074238"
+             y="7.4727864">(0;1)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="51.318192"
+           y="48.727589"
+           id="sinAndCos1XText">x</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="13"
+           y="40"
+           id="sinAndCos1XValText">x & L(Arc) = 0.54π</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="72.047684"
+           y="41.118546"
+           id="sinAndCos1OppositeText">sin(x)</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="62.290756"
+           y="48.764137"
+           id="sinAndCos1AdjecentText">cos(x)</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="63.292389"
+           y="37.840786"
+           id="sinAndCos1HypotenuseText">1</text>
+      </g>
+    </svg>
+  </p>
+
+  <p>Sine is opposite over hypotenuse and cosine is adjecent over hypotenuse. Proportions in diagram above are result of hypotenuse being 1.</p>
+
+  <p>There is a convenient way to present tangens and secant on a unit circle.</p>
+
+  <p class="u-text-center">
+    <svg
+      class="unit-circle"
+      width="141.87288mm"
+      height="99.338562mm"
+      viewBox="0 0 141.87288 99.338562"
+      version="1.1"
+      id="tanAndSec1"
+      sodipodi:docname="tan-and-sec.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="1.4402525"
+         inkscape:cx="214.54571"
+         inkscape:cy="191.2859"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer2" />
+      <defs
+         id="defs2">
+        <linearGradient
+           id="linearGradient1119"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop1117" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2973"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2971" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2936"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2934" />
+        </linearGradient>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1267"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1591"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1740"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5437"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5439"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5441"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+      </defs>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         style="display:inline">
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0.32199284,49.608639 H 142.19487"
+           id="path7737" />
+        <circle
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           id="tanAndSec1Circle"
+           cx="47.566849"
+           cy="49.770897"
+           r="40" />
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 47.579477,99.414589 V 0.07602885"
+           id="path12080" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.0707809;stroke-dasharray:none;stroke-opacity:1"
+           d="M 87.839019,49.927109 V 0.15917685"
+           id="path12080-3" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="path9379-1-7-4"
+           cx="47.524281"
+           cy="49.56636"
+           r="1.0923429" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer2"
+         inkscape:label="trig funcs"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#32c209;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.5,49.56 87.65863,26.831452"
+           id="tanAndSec1Hypotenuse" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 87.67356,49.056975 V 26.83782"
+           id="tanAndSec1Opposite" />
+        <path
+           style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.5,49.56 H 87.65"
+           id="tanAndSec1Adjecent" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+           id="tanAndSec1Arc"
+           sodipodi:type="arc"
+           sodipodi:cx="47.5"
+           sodipodi:cy="49.56"
+           sodipodi:rx="40.444"
+           sodipodi:ry="40.090286"
+           sodipodi:start="0"
+           sodipodi:end="0"
+           sodipodi:arc-type="arc"
+           d="m 82.3,30 a 40.444,40.090286 0 0 1 5.24333,19.741401"
+           sodipodi:open="true" />
+        <circle
+           style="opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="tanAndSec1OppositePoint"
+           cx="87.36256"
+           cy="49.570219"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="path9379-1"
+           cx="47.5"
+           cy="10"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="tanAndSec1HypotenusePoint"
+           cx="87.5"
+           cy="26.989536"
+           r="1.0923429" />
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+           x="38.3"
+           y="48"
+           id="text10090"><tspan
+             sodipodi:role="line"
+             id="tspan10088"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.264583"
+             x="38.3"
+             y="48">(0;0)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="38.3"
+           y="8"
+           id="text10090-6"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.264583"
+             x="38.3"
+             y="8">(0;1)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="51"
+           y="49"
+           id="tanAndSec1XText">x</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="89"
+           y="42.905537"
+           id="tanAndSec1TextOpposite">tan(x)</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="66"
+           y="54"
+           id="text10090-6-3-5-5">1</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="62"
+           y="35"
+           id="tanAndSec1HypotenuseText">sec(x)</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="88.77824"
+           y="53.597015"
+           id="text10090-6-0-0">(1;0)</text>
+      </g>
+    </svg>
+  </p>
+  
+  <p>Tangens is opposite over adjecent and secant is hypotenuse over adjecent. Proportions in diagram above are result of the adjecent side getting scaled up to 1.</p>
+
+  <p>There is a convenient way to present cotangens and cosecant on a unit circle.</p>
+
+  <p class="u-text-center">
+    <svg
+      class="unit-circle"
+      width="141.87288mm"
+      height="99.338562mm"
+      viewBox="0 0 141.87288 99.338562"
+      version="1.1"
+      id="cotAndCsc1"
+      sodipodi:docname="cot-and-csc.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="1.4552874"
+         inkscape:cx="267.30115"
+         inkscape:cy="45.69544"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer2" />
+      <defs
+         id="defs2">
+        <linearGradient
+           id="linearGradient1119"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop1117" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2973"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2971" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2936"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2934" />
+        </linearGradient>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1267"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1591"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1740"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5437"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5439"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5441"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+      </defs>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         style="display:inline">
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0.60001523,49.452416 H 142.47286"
+           id="path7737" />
+        <circle
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           id="cotAndCsc1Circle"
+           cx="47.844868"
+           cy="49.61467"
+           r="40.090286" />
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 47.857497,99.258276 V -0.08018791"
+           id="path12080" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="path9379-1-7-4"
+           cx="47.802299"
+           cy="49.410133"
+           r="1.0923429" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer2"
+         inkscape:label="trig funcs"
+         style="display:inline">
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 47.84685,9.2835426 h 95.75847"
+           id="path12082" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#32c209;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 48.193691,49.095153 117.91966,9.6518893"
+           id="cotAndCsc1Hypotenuse" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 117.80609,9.3928366 V 49.186868"
+           id="cotAndCsc1Opposite" />
+        <path
+           style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 48.16755,49.181375 h 69.99456"
+           id="cotAndCsc1Adjecent" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+           id="cotAndCsc1Arc"
+           sodipodi:type="arc"
+           sodipodi:cx="47.513073"
+           sodipodi:cy="49.425087"
+           sodipodi:rx="40.444"
+           sodipodi:ry="40.090286"
+           sodipodi:start="5.7683132"
+           sodipodi:end="0"
+           sodipodi:arc-type="arc"
+           d="m 82.713739,29.683686 a 40.444,40.090286 0 0 1 5.243334,19.741401"
+           sodipodi:open="true" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="cotAndCsc1AdjecentPoint"
+           cx="117.95559"
+           cy="49.390129"
+           r="1" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="cotAndCsc1HypotenusePoint"
+           cx="117.77895"
+           cy="8.8827267"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="path9379-1"
+           cx="48.071594"
+           cy="9.3056307"
+           r="1.0923429" />
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;stroke-width:0.264583"
+           x="39.866821"
+           y="47.611694"
+           id="text10090"><tspan
+             sodipodi:role="line"
+             id="tspan10088"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.264583"
+             x="39.866821"
+             y="47.611694">(0;0)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="39.49897"
+           y="7.6933551"
+           id="text10090-6"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.264583"
+             x="39.49897"
+             y="7.6933551">(0;1)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="51.917824"
+           y="48.390652"
+           id="cotAndCsc1XText">x</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="118.87024"
+           y="30.575291"
+           id="cotAndCsc1OppositeText">1</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.3;stroke-dasharray:none"
+           x="82.357719"
+           y="51.741974"
+           id="cotAndCsc1AdjecentText">cot(x)</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.3;stroke-dasharray:none"
+           x="81.834389"
+           y="23.537476"
+           id="cotAndCsc1HypotenuseText">csc(x)</text>
+      </g>
+    </svg>
+  </p>
+
+  <p>Cotangens is adjecent over opposite and cosecant is hypotenuse over opposite. Proportions in diagram above are result of the opposite side getting scaled up to 1.</p>
+
+</div>
+
+<div id="#sine-and-cosine">
+  <h6>Derivative of sine and cosine</h6>
+
+  <p>Let's draw sine and cosine on a unit circle.</p>
+
+  <div class="u-text-center">
+    <svg
+      class="unit-circle"
+      viewBox="0 0 141 99"
+      width="141mm"
+      height="99mm"
+      version="1.1"
+      id="sinAndCos2"
+      sodipodi:docname="unit-circle-trig-functions.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+      id="namedview7"
+      pagecolor="#ffffff"
+      bordercolor="#000000"
+      borderopacity="0.25"
+      inkscape:showpageshadow="2"
+      inkscape:pageopacity="0.0"
+      inkscape:pagecheckerboard="0"
+      inkscape:deskcolor="#d1d1d1"
+      inkscape:document-units="mm"
+      showgrid="false"
+      inkscape:zoom="8.246858"
+      inkscape:cx="308.35986"
+      inkscape:cy="167.15457"
+      inkscape:window-width="1920"
+      inkscape:window-height="1003"
+      inkscape:window-x="0"
+      inkscape:window-y="0"
+      inkscape:window-maximized="1"
+      inkscape:current-layer="layer2" />
+      <defs
+      id="defs2">
+      <linearGradient
+      id="linearGradient2973"
+      inkscape:swatch="solid">
+      <stop
+      style="stop-color:#000000;stop-opacity:1;"
+      offset="0"
+      id="stop2971" />
+      </linearGradient>
+      <linearGradient
+      id="linearGradient2936"
+      inkscape:swatch="solid">
+      <stop
+      style="stop-color:#000000;stop-opacity:1;"
+      offset="0"
+      id="stop2934" />
+      </linearGradient>
+      </defs>
+      <g
+      transform="translate(-5, -18)"
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      id="sinAndCos2_Layer1"
+      style="display:inline">
+
+      <circle
+      style="fill:#000000;fill-opacity:0;stroke:#000000;stroke-width:0.365;stroke-dasharray:none;stroke-opacity:1"
+      id="path381"
+      cx="52"
+      cy="66"
+      r="0.2" />
+      <path
+      style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+      d="M 5,66 H 147"
+      id="path7737" />
+      <circle
+      style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+      id="sinAndCos2Circle"
+      cx="52"
+      cy="66"
+      r="40" />
+      <path
+      style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+      d="M 52,116 V 16"
+      id="path12080" />
+      </g>
+      <g
+      transform="translate(-5, -18)"
+      inkscape:groupmode="layer"
+      id="sinAndCos2Layer2"
+      inkscape:label="trig funcs"
+      style="display:inline">
+
+      <path
+      style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.4;stroke-dasharray:none;stroke-opacity:1"
+      id="sinAndCos2Arc"
+      sodipodi:type="arc"
+      sodipodi:cx="52"
+      sodipodi:cy="66"
+      sodipodi:rx="40"
+      sodipodi:ry="40"
+      sodipodi:start="6"
+      sodipodi:end="0"
+      sodipodi:arc-type="arc"
+      d="m 88,48 a 40,40 0 0 1 4,18"
+      sodipodi:open="true" />
+      <path
+      <path
+      style="stroke:#32c209;stroke-width:0.8;"
+      d="M 52,66 88,48"
+      id="sinAndCos2Hypotenuse" />
+      <path
+      style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+      d="M 88,48 V 66"
+      id="sinAndCos2Opposite" />
+      <path
+      style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+      d="M 52,66 H 88"
+      id="sinAndCos2Adjecent" />
+      </g>
+      <g
+      transform="translate(-5, -18)"
+      inkscape:groupmode="layer"
+      id="layer3"
+      inkscape:label="text"
+      style="display:inline">
+      <text
+      xml:space="preserve"
+      style="font-size:0.15rem;font-family:monospace;stroke:#000000;stroke-width:0.1"
+      x="89"
+      y="59.539093"
+      id="sinAndCos2OppositeText"
+      inkscape:label="sinAndCos2OppositeText">sin(x)</text>
+      <text
+      xml:space="preserve"
+      style="font-size:0.15rem;font-family:monospace;stroke:#000000;stroke-width:0.1"
+      x="67"
+      y="70"
+      id="sinAndCos2AdjecentText"
+      inkscape:label="sinAndCos2AdjecentText">cos(x)</text>
+      <text
+      xml:space="preserve"
+      style="font-size:0.15rem;font-family:monospace;stroke:#000000;stroke-width:0.1"
+      x="68"
+      y="56"
+      id="sinAndCos2HypotenuseText"
+      inkscape:label="sinAndCos2HypotenuseText">1</text>
+      <text
+      xml:space="preserve"
+      style="font-size:0.15rem;font-family:monospace;stroke:#000000;stroke-width:0.1"
+      x="56"
+      y="65.5"
+      id="sinAndCos2XText"
+      inkscape:label="sinAndCos2XText">x</text>
+      </g>
+    </svg>
+  </div>
+
+  <p>Let there be a small increase in x, call it dx. Adding few lines forms a new triangle.</p>
+
+  <div class="u-text-center">
+
+    <svg
+      class="unit-circle"
+      width="141.87288mm"
+      height="99.338562mm"
+      viewBox="0 0 141.87288 99.338562"
+      version="1.1"
+      id="sinAndCosDX"
+      sodipodi:docname="sin-and-cos-dx.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+      id="namedview7"
+      pagecolor="#ffffff"
+      bordercolor="#000000"
+      borderopacity="0.25"
+      inkscape:showpageshadow="2"
+      inkscape:pageopacity="0.0"
+      inkscape:pagecheckerboard="0"
+      inkscape:deskcolor="#d1d1d1"
+      inkscape:document-units="mm"
+      showgrid="false"
+      inkscape:zoom="3.7194691"
+      inkscape:cx="217.50416"
+      inkscape:cy="106.33238"
+      inkscape:window-width="1920"
+      inkscape:window-height="1003"
+      inkscape:window-x="0"
+      inkscape:window-y="0"
+      inkscape:window-maximized="1"
+      inkscape:current-layer="layer2" />
+      <defs
+      id="defs2">
+      <linearGradient
+      id="linearGradient1119"
+      inkscape:swatch="solid">
+      <stop
+      style="stop-color:#000000;stop-opacity:1;"
+      offset="0"
+      id="stop1117" />
+      </linearGradient>
+      <linearGradient
+      id="linearGradient2973"
+      inkscape:swatch="solid">
+      <stop
+      style="stop-color:#000000;stop-opacity:1;"
+      offset="0"
+      id="stop2971" />
+      </linearGradient>
+      <linearGradient
+      id="linearGradient2936"
+      inkscape:swatch="solid">
+      <stop
+      style="stop-color:#000000;stop-opacity:1;"
+      offset="0"
+      id="stop2934" />
+      </linearGradient>
+      <linearGradient
+      inkscape:collect="always"
+      xlink:href="#linearGradient1119"
+      id="linearGradient1267"
+      gradientUnits="userSpaceOnUse"
+      x1="57.761909"
+      y1="71.712051"
+      x2="64.137634"
+      y2="71.712051" />
+      <linearGradient
+      inkscape:collect="always"
+      xlink:href="#linearGradient1119"
+      id="linearGradient1591"
+      gradientUnits="userSpaceOnUse"
+      x1="57.761909"
+      y1="71.712051"
+      x2="64.137634"
+      y2="71.712051" />
+      <linearGradient
+      inkscape:collect="always"
+      xlink:href="#linearGradient1119"
+      id="linearGradient1740"
+      gradientUnits="userSpaceOnUse"
+      x1="57.761909"
+      y1="71.712051"
+      x2="64.137634"
+      y2="71.712051" />
+      <linearGradient
+      inkscape:collect="always"
+      xlink:href="#linearGradient1119"
+      id="linearGradient5437"
+      gradientUnits="userSpaceOnUse"
+      x1="57.761909"
+      y1="71.712051"
+      x2="64.137634"
+      y2="71.712051" />
+      <linearGradient
+      inkscape:collect="always"
+      xlink:href="#linearGradient1119"
+      id="linearGradient5439"
+      gradientUnits="userSpaceOnUse"
+      x1="57.761909"
+      y1="71.712051"
+      x2="64.137634"
+      y2="71.712051" />
+      <linearGradient
+      inkscape:collect="always"
+      xlink:href="#linearGradient1119"
+      id="linearGradient5441"
+      gradientUnits="userSpaceOnUse"
+      x1="57.761909"
+      y1="71.712051"
+      x2="64.137634"
+      y2="71.712051" />
+      </defs>
+      <g
+      inkscape:label="Layer 1"
+      inkscape:groupmode="layer"
+      id="layer1"
+      style="display:inline">
+      <path
+      style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.0980038;stroke-dasharray:none;stroke-opacity:1"
+      d="M 0,49.501976 H 141.41569"
+      id="path7737" />
+      <circle
+      style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+      id="sinAndCosDXCircle"
+      cx="47.3"
+      cy="49.6"
+      r="40" />
+      <path
+      style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.0921986;stroke-dasharray:none;stroke-opacity:1"
+      d="M 47.307497,98.606775 V 0"
+      id="path12080" />
+      <path
+      style="opacity:0.99;fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+      d="M 82,0 V 49.473849"
+      id="sinAndCosDXVertical" />
+      </g>
+      <g
+      inkscape:groupmode="layer"
+      id="layer2"
+      inkscape:label="trig funcs"
+      style="display:inline">
+      <path
+      style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#32c209;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+      d="m 47.405876,49.55135 34.738443,-19.999"
+      id="path12422" />
+      <path
+      style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+      d="M 81.833514,49.584522 V 29.481968"
+      id="path12696" />
+      <path
+      style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.404424;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+      d="M 47.3,49.6 H 82.05259"
+      id="path27863" />
+      <circle
+      style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+      id="sinAndCosDXAdjecentPoint"
+      cx="67.2"
+      cy="14.9"
+      r="1" />
+      <circle
+      style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+      id="sinAndCosDXOppositePoint"
+      cx="81.869759"
+      cy="14.9"
+      r="1.0923429" />
+      <circle
+      style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+      id="sinAndCosDXFixedPoint"
+      cx="81.775681"
+      cy="29.58062"
+      r="1.0923429" />
+      <text
+      xml:space="preserve"
+      style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+      x="74.5"
+      y="22.2"
+      id="sinAndCosDXHypotenuseText">dx</text>
+      <path
+      style="opacity:0.99;fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+      d="M 103,50 52,0"
+      id="sinAndCosDXTangentLine" />
+      <path
+      style="opacity:0.99;fill:none;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+      d="M 47.283023,49.637742 67.2,14.9"
+      id="sinAndCosDXHypotenuseLong" />
+      <path
+      style="opacity:0.99;fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+      d="M 141,14.5 H 47.2"
+      id="sinAndCosDXXParallel" />
+      <path
+      style="opacity:0.99;fill:none;stroke:#d8081d;stroke-width:0.8;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+      d="M 81.828917,29.74831 V 14.9"
+      id="sinAndCosDXOpposite" />
+      <path
+      style="opacity:0.99;fill:none;stroke:#2424e4;stroke-width:0.8;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+      d="M 67.2,14.9 H 81.83923"
+      id="sinAndCosDXAdjecent" />
+      <path
+      style="opacity:0.99;fill:none;stroke:#32c209;stroke-width:0.8;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+      d="m 67.2,14.9 14.5,14.5"
+      id="sinAndCosDXHypotenuse" />
+      </g>
+    </svg>
+
+  </div>
+
+  <p>Observe when angle dx is infinitely small then the chord dx is nearly perpendicular to both <b>hypotenuse</b> lines. Then we can reason that angles of the new triangle are the same as of the original. It is just rotated and scaled down version of it, where hypotenuse got decreased from single unit down to dx!</p>
+
+  <p>The ratio between sides of a triangle never changes hence sine and cosine values are the same for the new triangle.</p>
+  <p>Increase in sine is marked in red in the new triangle. It's length is cos(x)&times;dx which means the derrivative of sin(x) is cos(x).</p>
+  <p>Decrease in cosine marked in blue in the new triangle. It's length is sin(x)&times;dx which means the derrivative of cos(x) is &minus;sin(x).</p>
+  <div class="u-text-center">
+
+    <svg
+      class="triangles"
+      width="122.1043mm"
+      height="59.784321mm"
+      viewBox="0 0 122.1043 59.784321"
+      version="1.1"
+      id="svg3825"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      sodipodi:docname="sin-and-cos-dx-triangle.svg"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview3827"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="1.6862604"
+         inkscape:cx="183.83875"
+         inkscape:cy="63.157505"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+      <defs
+         id="defs3822" />
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         transform="translate(-32.473652,-231.21216)">
+        <path
+           style="opacity:0.99;fill:none;stroke:#2424e4;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 95.753005,236.19197 H 134.62228"
+           id="path4363" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#d8081d;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 134.53955,236.23492 v 54.72746"
+           id="path4365" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#32c209;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:markers fill stroke"
+           d="m 96.049785,236.17145 38.208135,54.81099"
+           id="path4367" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+           x="108.61927"
+           y="263.63382"
+           id="text9113"
+           transform="scale(0.99819738,1.0018059)"><tspan
+             sodipodi:role="line"
+             id="tspan9111"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+             x="108.61927"
+             y="263.63382">dx</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+           x="131.18373"
+           y="281.93747"
+           id="text9113-7"
+           transform="scale(0.99819738,1.0018059)"><tspan
+             sodipodi:role="line"
+             id="tspan9111-0"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+             x="131.18373"
+             y="281.93747">x</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+           x="106.37573"
+           y="233.5038"
+           id="text9113-2"
+           transform="scale(0.99819738,1.0018059)"><tspan
+             sodipodi:role="line"
+             id="tspan9111-9"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+             x="106.37573"
+             y="233.5038">sin(x)dx</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+           x="136.282"
+           y="262.04181"
+           id="text9113-2-1"
+           transform="scale(0.99819738,1.0018059)"><tspan
+             sodipodi:role="line"
+             id="tspan9111-9-2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+             x="136.282"
+             y="262.04181">cos(x)dx</tspan></text>
+        <path
+           style="opacity:0.99;fill:none;stroke:#2424e4;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 32.504681,235.92446 H 71.373955"
+           id="path4363-7" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#d8081d;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 71.291225,235.96741 v 54.72746"
+           id="path4365-8" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#32c209;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;paint-order:markers fill stroke"
+           d="m 32.801461,235.90394 38.208134,54.81099"
+           id="path4367-4" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+           x="45.256718"
+           y="263.3663"
+           id="text9113-5"
+           transform="scale(0.99819738,1.0018059)"><tspan
+             sodipodi:role="line"
+             id="tspan9111-03"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+             x="45.256718"
+             y="263.3663">1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+           x="67.821182"
+           y="281.67047"
+           id="text9113-7-6"
+           transform="scale(0.99819738,1.0018059)"><tspan
+             sodipodi:role="line"
+             id="tspan9111-0-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+             x="67.821182"
+             y="281.67047">x</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+           x="43.01318"
+           y="233.23607"
+           id="text9113-2-0"
+           transform="scale(0.99819738,1.0018059)"><tspan
+             sodipodi:role="line"
+             id="tspan9111-9-6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+             x="43.01318"
+             y="233.23607">sin(x)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+           x="72.919449"
+           y="261.77423"
+           id="text9113-2-1-3"
+           transform="scale(0.99819738,1.0018059)"><tspan
+             sodipodi:role="line"
+             id="tspan9111-9-2-2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.91137px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.162974"
+             x="72.919449"
+             y="261.77423">cos(x)</tspan></text>
+      </g>
+    </svg>
+
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</div>
+<div id="#tangens-and-secant">
+  <h6>Derivative of tangens and secant</h6>
+  <p>Let's draw tangens and secant on a unit circle.</p>
+
+  <div class="u-text-center">
+      
+    <svg
+      class="unit-circle"
+      width="141.87288mm"
+      height="99.338562mm"
+      viewBox="0 0 141.87288 99.338562"
+      version="1.1"
+      id="tanAndSec2"
+      sodipodi:docname="tan-and-sec.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="1.4402525"
+         inkscape:cx="214.54571"
+         inkscape:cy="191.98023"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer2" />
+      <defs
+         id="defs2">
+        <linearGradient
+           id="linearGradient1119"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop1117" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2973"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2971" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2936"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2934" />
+        </linearGradient>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1267"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1591"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1740"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5437"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5439"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5441"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+      </defs>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         style="display:inline">
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0.32199284,49.608639 H 142.19487"
+           id="path7737" />
+        <circle
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           id="tanAndSec2Circle"
+           cx="47.566849"
+           cy="49.770897"
+           r="40.090286" />
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 47.579477,99.414589 V 0"
+           id="path12080" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.0707809;stroke-dasharray:none;stroke-opacity:1"
+           d="M 87.839019,49.927109 V 0.15917685"
+           id="path12080-3" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="path9379-1-7-4"
+           cx="47.524281"
+           cy="49.56636"
+           r="1" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer2"
+         inkscape:label="trig funcs"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#32c209;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.421667,49.893046 87.65863,27.131452"
+           id="tanAndSec2Hypotenuse" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 87.67356,27.056975 V 49.87782"
+           id="tanAndSec2Opposite" />
+        <path
+           style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.450898,49.881383 H 87.79717"
+           id="path27863" />
+        <circle
+           style="opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="tanAndSec2AdjecentPoint"
+           cx="87.66256"
+           cy="50.170219"
+           r="1" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="tanAndSec2HypotenusePoint"
+           cx="87.68859"
+           cy="26.989536"
+           r="1" />
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="51.20118"
+           y="49.090664"
+           id="tanAndSec2XText">x</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="88.45574"
+           y="38.905537"
+           id="text10090-6-3-5"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1-2-2"
+             style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+             x="88.45574"
+             y="38.905537">tan(x)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="68.258316"
+           y="53"
+           id="text10090-6-3-5-5">1</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="63.495811"
+           y="35.035664"
+           id="tanAndSec2HypotenuseText">sec(x)</text>
+      </g>
+    </svg>
+
+  </div>
+  <p>Let there be a small increase in x, call it dx. We can add few lines and form a new triangle as follows.</p>
+  <div class="u-text-center">
+   
+    <svg
+      class="unit-circle"
+      width="141.87288mm"
+      height="99.338562mm"
+      viewBox="0 0 141.87288 99.338562"
+      version="1.1"
+      id="tanAndSecDX"
+      sodipodidocname="tan-and-sec-dx.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="1.962577"
+         inkscape:cx="145.21723"
+         inkscape:cy="51.717716"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+      <defs
+         id="defs2">
+        <linearGradient
+           id="linearGradient1119"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop1117" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2973"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2971" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2936"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2934" />
+        </linearGradient>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1267"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1591"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1740"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5437"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5439"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5441"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+      </defs>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         style="display:inline">
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0.32199284,49.608639 H 142.19487"
+           id="path7737" />
+        <circle
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           id="tanAndSecDXCircle"
+           cx="47.566849"
+           cy="49.770897"
+           r="40.090286" />
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 47.579477,99.414589 V 0.07602885"
+           id="path12080" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 87.839019,49.927109 V 0.15917685"
+           id="path12080-3" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer2"
+         inkscape:label="trig funcs"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#32c209;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.406329,49.622187 87.643226,26.860593"
+           id="path12422" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 87.658156,26.6 V 49.606961"
+           id="path12696-7" />
+        <path
+           style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.43556,49.610524 H 87.781766"
+           id="path27863" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="tanAndSecDXHypotenusePoint"
+           cx="82.375015"
+           cy="10.227549"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="tanAndSecDXAdjecentPoint"
+           cx="73.944183"
+           cy="19.777771"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="tanAndSecDXFixedPoint"
+           cx="82.515961"
+           cy="29.592148"
+           r="1.0923429" />
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="77.8"
+           y="23.3"
+           id="tanAndSecDXText">dx</text>
+        <path
+           style="opacity:0.99;fill:none;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 47.580519,49.698937 88.063866,3.7639378"
+           id="tanAndSecDXHypotenuseLong" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#d8081d;stroke-width:0.8;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 73.915927,19.60206 8.712849,10.388354"
+           id="tanAndSecDXAdjecent" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 56,0.34331495 101,49.812586"
+           id="tanAndSecDXTangentLine" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 82.426436,0.28237095 V 49.524833"
+           id="tanAndSecDXYParallel" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#2424e4;stroke-width:0.799999;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 73.958808,19.835806 8.470708,-9.747637"
+           id="tanAndSecDXOpposite" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#32c209;stroke-width:0.8;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 82.436726,10.169681 0.021,19.501604"
+           id="tanAndSecDXHypotenuse" />
+      </g>
+    </svg>
+
+  </div>
+
+  <p>Observe when angle dx is infinitely small then the chord dx is nearly perpendicular to both <b>secant</b> lines. Then we can reason that angles of the new triangle are the same as of the original. It is just rotated and scaled down version of it, where hypotenuse got decreased from single unit down to sec(x)&times;dx!</p>
+
+  <p>Let's scale up the new triangle while keeping it on secant lines untill it aligns itself with tangens line. The resulting triangle remains similar to the original one.</p>
+
+  <div class="u-text-center">
+
+    <svg
+      class="unit-circle"
+      width="141.87288mm"
+      height="99.338562mm"
+      viewBox="0 0 141.87288 99.338562"
+      version="1.1"
+      id="tanAndSecDX2"
+      sodipodi:docname="tan-and-sec-dx2.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="3.5389869"
+         inkscape:cx="295.84738"
+         inkscape:cy="91.975475"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+      <defs
+         id="defs2">
+        <linearGradient
+           id="linearGradient1119"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop1117" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2973"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2971" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2936"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2934" />
+        </linearGradient>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1267"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1591"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1740"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5437"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5439"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5441"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+      </defs>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         style="display:inline">
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0.32199284,49.608639 H 142.19487"
+           id="path7737" />
+        <circle
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           id="tanAndSecDX2Circle"
+           cx="47.566849"
+           cy="49.770897"
+           r="40.090286" />
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 47.579477,99.414589 V 0.07602885"
+           id="path12080" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 87.839019,49.927109 V 0.15917685"
+           id="path12080-3" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 54,-8.7 110.3,49.8"
+           id="tanAndSecDX2TangentLine" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         inkscape:label="trig funcs"
+         style="display:inline">
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#32c209;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.531308,49.659166 87.768214,26.897572"
+           id="tanAndSecDX2HypotenuseOld" />
+        <path
+           style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.560539,49.647503 H 87.906754"
+           id="path27863" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 87.892354,27.06552 V 49.8" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="tanAndSecDX2OppositePoint"
+           cx="87.6"
+           cy="4"
+           r="1" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="tanAndSecDX2AdjecentPoint"
+           cx="77.627365"
+           cy="15.652239"
+           r="1.0923429" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           id="path7792-9"
+           sodipodi:type="arc"
+           sodipodi:cx="47.676861"
+           sodipodi:cy="49.681553"
+           sodipodi:rx="45.5"
+           sodipodi:ry="45.5"
+           sodipodi:start="5.4367006"
+           sodipodi:end="5.7683132"
+           sodipodi:arc-type="arc"
+           d="m 77.826072,15.604067 a 45.5,45.5 0 0 1 9.451973,11.672215"
+           sodipodi:open="true" />
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="64.007324"
+           y="-44.630589"
+           id="text10090-6-3-0"
+           transform="rotate(48.60626)"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1-2-6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.264583"
+             x="64.007324"
+             y="-44.630589">sec(x)dx</tspan></text>
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="tanAndSecDX2HypotenusePoint"
+           cx="87.736862"
+           cy="27.003456"
+           r="1.0923429" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#000000;stroke-width:0.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 47.705498,49.735916 88,3.6"
+           id="tanAndSecDX2HypotenuseLineNew" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#d8081d;stroke-width:0.950353;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 77.262545,15.230176 87.882964,27.25711"
+           id="tanAndSecDX2Adjecent" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#2424e4;stroke-width:0.976741;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 77.169565,16.02124 87.571467,4.1884557"
+           id="tanAndSecDX2Opposite" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#32c209;stroke-width:0.859538;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 87.6,26.96 V 3.99"
+           id="tanAndSecDX2Hypotenuse" />
+      </g>
+    </svg>
+
+  </div>
+  <p>The resulting adjecent side of the new triangle decreases to sec(x)&times;dx, and the rest decreases proportionally.</p>
+
+  <p>The ratio between sides of a triangle never changes hence tangens and secant values are the same!</p>
+  <p>Increase in tangens is marked in green in the new triangle. It's length is sec(x)&times;sec(x)&times;dx which means the derrivative of tan(x) is sec(x)&times;sec(x).</p>
+  <p>Increase in secant is marked in blue in the new triangle. It's length is tan(x)&times;sec(x)&times;dx which means the derrivative of sec(x) is tan(x)&times;sec(x).</p>
+  <div class="u-text-center">
+
+    <svg
+      class="triangles"
+      width="126.27371mm"
+      height="60.517338mm"
+      viewBox="0 0 126.27372 60.517338"
+      version="1.1"
+      id="svg24326"
+      sodipodi:docname="tan-and-sec-dx-triangle.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview24328"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="1.3350953"
+         inkscape:cx="40.44655"
+         inkscape:cy="33.330953"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+      <defs
+         id="defs24323" />
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         transform="translate(-191.8297,-112.38105)">
+        <text
+           xml:space="preserve"
+           style="font-size:3.95379px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.668345"
+           x="201.14819"
+           y="161.48055"
+           id="text10090-6-3-0"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1-2-6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95379px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.668345"
+             x="201.14819"
+             y="161.48055">1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:3.95379px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.668345"
+           x="214.53931"
+           y="163.69678"
+           id="text10090-6-3-0-9"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1-2-6-2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95379px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.668345"
+             x="214.53931"
+             y="163.69678">x</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:3.95379px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.668345"
+           x="191.75851"
+           y="127.24592"
+           id="text10090-6-3-0-7"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1-2-6-5"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95379px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.668345"
+             x="191.75851"
+             y="127.24592">tan(x)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:3.95379px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.668345"
+           x="221.30005"
+           y="137.94728"
+           id="text10090-6-3-0-2"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1-2-6-3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95379px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.668345"
+             x="221.30005"
+             y="137.94728" /><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95379px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.668345"
+             x="221.30005"
+             y="143.0486"
+             id="tspan25612">sec(x)</tspan></text>
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#d8081d;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 192.35476,142.05434 26.82764,30.38039"
+           id="path13727" />
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#2424e4;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 192.4549,143.05884 26.84307,-29.48479"
+           id="path17870" />
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#32c209;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 219.10778,113.28259 0.0528,58.66326"
+           id="path17872" />
+        <text
+           xml:space="preserve"
+           style="font-size:3.95379px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.668345"
+           x="251.02893"
+           y="161.19942"
+           id="text10090-6-3-0-28"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1-2-6-9"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95379px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.668345"
+             x="251.02893"
+             y="161.19942">sec(x)dx</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:3.95379px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.668345"
+           x="278.75858"
+           y="163.65919"
+           id="text10090-6-3-0-9-7"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1-2-6-2-3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95379px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.668345"
+             x="278.75858"
+             y="163.65919">x</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:3.95379px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.668345"
+           x="236.40579"
+           y="126.33694"
+           id="text10090-6-3-0-7-6"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1-2-6-5-1"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95379px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.668345"
+             x="236.40579"
+             y="126.33694">tan(x)sec(x)dx</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-size:3.95379px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.668345"
+           x="285.0932"
+           y="135.54634"
+           id="text10090-6-3-0-2-2"><tspan
+             sodipodi:role="line"
+             id="tspan10088-1-2-6-3-9"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95379px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.668345"
+             x="285.0932"
+             y="135.54634" /><tspan
+             sodipodi:role="line"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95379px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.668345"
+             x="285.0932"
+             y="140.64766"
+             id="tspan25612-3">sec(x)sec(x)dx</tspan></text>
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#2424e4;stroke-width:1.40095;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 256.70931,143.27235 26.27564,-29.88993"
+           id="path17870-9" />
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#d8081d;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 256.5735,142.01543 26.82763,30.3804"
+           id="path13727-1" />
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#32c209;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 283.32649,112.38167 0.0528,59.52569"
+           id="path17872-4" />
+      </g>
+    </svg>
+
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+</div>
+<div id="#cotangens-and-cosecant">
+  <h6>Derivative of cotangens and cosecant</h6>
+  <p>Let's draw cotangens and cosecant on a unit circle.</p>
+  <div class="u-text-center">
+
+    <svg
+      class="unit-circle"
+      width="141.87288mm"
+      height="99.338562mm"
+      viewBox="0 0 141.87288 99.338562"
+      version="1.1"
+      id="cotAndCsc2"
+      sodipodi:docname="cot-and-csc.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="1.4552874"
+         inkscape:cx="267.30115"
+         inkscape:cy="46.382591"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer2" />
+      <defs
+         id="defs2">
+        <linearGradient
+           id="linearGradient1119"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop1117" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2973"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2971" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2936"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2934" />
+        </linearGradient>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1267"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1591"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1740"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5437"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5439"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5441"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+      </defs>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         style="display:inline">
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0.60001523,49.452416 H 142.47286"
+           id="path7737" />
+        <circle
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           id="cotAndCsc2Circle"
+           cx="47.844868"
+           cy="49.61467"
+           r="40.090286" />
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 47.857497,99.258276 V -0.08018791"
+           id="path12080" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="path9379-1-7-4"
+           cx="47.802299"
+           cy="49.410133"
+           r="1.0923429" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer2"
+         inkscape:label="trig funcs"
+         style="display:inline">
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 47.84685,9.2835426 h 95.75847"
+           id="path12082" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#32c209;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 48.193691,49.095153 117.91966,9.6518893"
+           id="cotAndCsc2Hypotenuse" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 117.80609,9.3928366 V 49.186868"
+           id="cotAndCsc2Opposite" />
+        <path
+           style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.8;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 48.16755,49.181375 h 69.99456"
+           id="cotAndCsc2Adjecent" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="cotAndCsc2AdjecentPoint"
+           cx="117.95559"
+           cy="49.390129"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="cotAndCsc2HypotenusePoint"
+           cx="117.77895"
+           cy="8.8827267"
+           r="1.0923429" />
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="51.917824"
+           y="48.390652"
+           id="cotAndCsc2XText">x</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.264583"
+           x="118.87024"
+           y="30.575291"
+           id="cotAndCsc2OppositeText">1</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.3;stroke-dasharray:none"
+           x="82.357719"
+           y="51.741974"
+           id="cotAndCsc2AdjecentText">cot(x)</text>
+        <text
+           xml:space="preserve"
+           style="font-size:2.82222px;line-height:1.25;font-family:monospace;-inkscape-font-specification:monospace;display:inline;stroke-width:0.3;stroke-dasharray:none"
+           x="81.834389"
+           y="23.537476"
+           id="cotAndCsc2HypotenuseText">csc(x)</text>
+      </g>
+    </svg>
+
+  </div>
+  <div>Let there be a small increase in x, call it dx. We can add few lines to form a new triangle.</div>
+  <div class="u-text-center">
+
+    <svg
+      class="unit-circle"
+      width="141.87288mm"
+      height="99.338562mm"
+      viewBox="0 0 141.87288 99.338562"
+      version="1.1"
+      id="cotAndCscDX"
+      sodipodi:docname="cot-and-csc-dx.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="2.8489658"
+         inkscape:cx="271.67753"
+         inkscape:cy="106.52989"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer2" />
+      <defs
+         id="defs2">
+        <linearGradient
+           id="linearGradient1119"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop1117" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2973"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2971" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2936"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2934" />
+        </linearGradient>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1267"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1591"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1740"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5437"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5439"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5441"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+      </defs>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         style="display:inline">
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0.60001523,49.452416 H 142.47286"
+           id="path7737" />
+        <circle
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           id="cotAndCscDXCircle"
+           cx="47.844868"
+           cy="49.61467"
+           r="40.090286" />
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 47.857497,99.258276 V -0.08018791"
+           id="path12080" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer2"
+         inkscape:label="trig funcs"
+         style="display:inline">
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 47.84685,9.2835426 h 95.75847"
+           id="path12082" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#32c209;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.802229,49.37657 117.91901,9.653028"
+           id="cotAndCscDXOldHypotenuseLong" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.825169,49.463305 95.583966,9.3336542"
+           id="cotAndCscDXNewHypotenuseLong" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 117.80609,9.3928366 V 49.186868"
+           id="path12696-7-4" />
+        <path
+           style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.401384;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.777048,49.42718 H 118.13963"
+           id="path27863" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 67.918537,9.1162569 97.037962,49.606763"
+           id="cotAndCscDXTangentLine" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#2424e4;stroke-width:0.911752;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 78.5142,24.421268 3.915587,4.938186"
+           id="cotAndCscDXOpposite" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#d8081d;stroke-width:1.12998;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 92.4614,24.200275 -9.862128,5.317901"
+           id="cotAndCscDXAdjecent" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="cotAndCscDXOppositePoint"
+           cx="78.521164"
+           cy="24.061699"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="cotAndCscDXHypotenusePoint"
+           cx="92.675804"
+           cy="24.238672"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="cotAndCscDXFixedPoint"
+           cx="82.538574"
+           cy="29.453959"
+           r="1.0923429" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.264583"
+           x="76.791267"
+           y="28.511736"
+           id="cotAndCscDXText">dx</text>
+        <path
+           style="opacity:0.99;fill:none;stroke:#32c209;stroke-width:0.799999;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 78.451309,24.156422 14.408862,-0.01694"
+           id="cotAndCscDXHypotenuse" />
+      </g>
+    </svg>
+
+  </div>
+  <p>Observe when angle dx is infinitely small then the chord dx is nearly perpendicular to both <b>cosecant</b> lines. Then we can reason that angles of the new triangle are the same as of the original. It is just rotated and scaled down version of it, where hypotenuse got decreased from single unit down to csc(x)&times;dx!</p>
+
+  <p>Let's scale up the new triangle while keeping it on cosecant lines untill top edge of the unit circle. The resulting triangle remains similar to the original one.</p>
+
+  <div class="u-text-center">
+   
+    <svg
+      class="unit-circle"
+      width="141.87288mm"
+      height="99.338562mm"
+      viewBox="0 0 141.87288 99.338562"
+      version="1.1"
+      id="cotAndCscDX2"
+      sodipodi:docname="cot-and-csc-dx2.svg"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns:xlink="http://www.w3.org/1999/xlink"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview7"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="2.6901287"
+         inkscape:cx="279.1688"
+         inkscape:cy="123.22831"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer2" />
+      <defs
+         id="defs2">
+        <linearGradient
+           id="linearGradient1119"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop1117" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2973"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2971" />
+        </linearGradient>
+        <linearGradient
+           id="linearGradient2936"
+           inkscape:swatch="solid">
+          <stop
+             style="stop-color:#000000;stop-opacity:1;"
+             offset="0"
+             id="stop2934" />
+        </linearGradient>
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1267"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1591"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient1740"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5437"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5439"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+        <linearGradient
+           inkscape:collect="always"
+           xlink:href="#linearGradient1119"
+           id="linearGradient5441"
+           gradientUnits="userSpaceOnUse"
+           x1="57.761909"
+           y1="71.712051"
+           x2="64.137634"
+           y2="71.712051" />
+      </defs>
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         style="display:inline">
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 0.60001523,49.452416 H 142.47286"
+           id="path7737" />
+        <circle
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.2;stroke-dasharray:none;stroke-opacity:1"
+           id="cotAndCscDX2Circle"
+           cx="47.844868"
+           cy="49.61467"
+           r="40.090286" />
+        <path
+           style="fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-opacity:1"
+           d="M 47.857497,99.258276 V -0.08018791"
+           id="path12080" />
+      </g>
+      <g
+         inkscape:groupmode="layer"
+         id="layer2"
+         inkscape:label="trig funcs"
+         style="display:inline">
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="m 47.84685,9.2835426 h 95.75847"
+           id="path12082" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#32c209;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.802229,49.37657 117.91901,9.653028"
+           id="cotAndCscDX2LongHypotenuseOld" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#000000;stroke-width:0.1;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.825169,49.463305 95.583966,9.3336542"
+           id="cotAndCscDX2LongHypotenuseNew" />
+        <path
+           style="display:inline;fill:#000000;fill-opacity:0;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 117.80609,9.3928366 V 49.186868"
+           id="path12696-7-4" />
+        <path
+           style="fill:#000000;fill-opacity:0.333333;fill-rule:nonzero;stroke:#d8081d;stroke-width:0.401384;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1"
+           d="M 47.777048,49.42718 H 118.13963"
+           id="path27863" />
+        <path
+           style="display:inline;fill:none;fill-opacity:1;fill-rule:nonzero;stroke:#2424e4;stroke-width:0.3;stroke-dasharray:none;stroke-opacity:1"
+           id="path7792-9"
+           sodipodi:type="arc"
+           sodipodi:cx="47.513073"
+           sodipodi:cy="49.425087"
+           sodipodi:rx="62.400002"
+           sodipodi:ry="62.400002"
+           sodipodi:start="5.576327"
+           sodipodi:end="5.7770398"
+           sodipodi:arc-type="arc"
+           d="M 94.962408,8.8995297 A 62.400002,62.400002 0 0 1 102.08934,19.172965"
+           sodipodi:open="true" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#2424e4;stroke-width:0.8;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 95,9 6.5,10"
+           id="cotAndCscDX2Opposite" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#d8081d;stroke-width:0.8;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 117.67627,9.7597144 102.33062,18.12388"
+           id="cotAndCscDX2Adjecent" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="cotAndCscDX2OppositePoint"
+           cx="95.454514"
+           cy="9.2"
+           r="1" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="cotAndCscDX2HypotenusePoint"
+           cx="117.89941"
+           cy="9.2"
+           r="1.0923429" />
+        <circle
+           style="display:inline;opacity:0.99;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke"
+           id="cotAndCscDX2AdjecentPoint"
+           cx="102.42173"
+           cy="18.67445"
+           r="1.0923429" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.264583"
+           x="86.845444"
+           y="18.45756"
+           id="text54749"><tspan
+             sodipodi:role="line"
+             id="tspan54747"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:2.82222px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.264583"
+             x="86.845444"
+             y="18.45756">csc(x)dx</tspan></text>
+        <path
+           style="opacity:0.99;fill:none;stroke:#32c209;stroke-width:0.8;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 95.380342,9.3396715 22.908298,-0.01679"
+           id="cotAndCscDX2Hypotenuse" />
+        <path
+           style="opacity:0.99;fill:none;stroke:#000000;stroke-width:0.1;stroke-linejoin:bevel;paint-order:markers fill stroke;stroke-dasharray:none"
+           d="M 95.396276,9.3466474 117.69868,40.039443"
+           id="cotAndCscDX2TangentLine" />
+      </g>
+    </svg>
+
+  </div>
+  <p>The resulting opposite side of the new triangle decreases to csc(x)&times;dx, and the rest decreases proportionally.</p>
+
+  <p>The ratio between sides of a triangle never changes therefore cotangens and cosecant values are the same!</p>
+
+  <p>Decrease in cotangens is marked in green in the new triangle. It's length is csc(x)&times;csc(x)&times;dx which means the derrivative of cot(x) is &minus;csc(x)&times;csc(x).</p>
+  <p>Decrease in cosecant is marked in red in the new triangle. It's length is cot(x)&times;csc(x)&times;dx which means the derrivative of csc(x) is &minus;cot(x)&times;csc(x).</p>
+  <div class="u-text-center">
+
+    <svg
+      class="triangles"
+      width="118.51691mm"
+      height="21.81123mm"
+      viewBox="0 0 118.51691 21.81123"
+      version="1.1"
+      id="svg57271"
+      inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+      sodipodi:docname="cot-and-scs-dx-triangle.svg"
+      xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+      xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+      xmlns="http://www.w3.org/2000/svg"
+      xmlns:svg="http://www.w3.org/2000/svg">
+      <sodipodi:namedview
+         id="namedview57273"
+         pagecolor="#ffffff"
+         bordercolor="#000000"
+         borderopacity="0.25"
+         inkscape:showpageshadow="2"
+         inkscape:pageopacity="0.0"
+         inkscape:pagecheckerboard="0"
+         inkscape:deskcolor="#d1d1d1"
+         inkscape:document-units="mm"
+         showgrid="false"
+         inkscape:zoom="1.5470134"
+         inkscape:cx="127.34214"
+         inkscape:cy="74.659985"
+         inkscape:window-width="1920"
+         inkscape:window-height="1003"
+         inkscape:window-x="0"
+         inkscape:window-y="0"
+         inkscape:window-maximized="1"
+         inkscape:current-layer="layer1" />
+      <defs
+         id="defs57268" />
+      <g
+         inkscape:label="Layer 1"
+         inkscape:groupmode="layer"
+         id="layer1"
+         transform="translate(-16.024392,-113.89611)">
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#2424e4;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 16.5115,120.36191 10.765094,14.96841"
+           id="path52323" />
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#d8081d;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 52.698395,120.90495 26.521854,135.17251"
+           id="path52327" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;display:inline;stroke-width:0.416491"
+           x="18.347328"
+           y="131.70145"
+           id="text54749"><tspan
+             sodipodi:role="line"
+             id="tspan54747"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.416491"
+             x="18.347328"
+             y="131.70145">1</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;display:inline;stroke-width:0.416491"
+           x="39.788841"
+           y="131.52858"
+           id="text54749-5"><tspan
+             sodipodi:role="line"
+             id="tspan54747-6"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.416491"
+             x="39.788841"
+             y="131.52858">cot(x)</tspan></text>
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#32c209;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 16.283988,120.6807 36.565671,-0.0268"
+           id="path54751" />
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#2424e4;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 78.778486,120.3699 10.765095,14.96841"
+           id="path52323-5" />
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#d8081d;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="M 114.96538,120.91295 88.78884,135.18051"
+           id="path52327-5" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;display:inline;stroke-width:0.416491"
+           x="62.8652"
+           y="130.04132"
+           id="text54749-4"><tspan
+             sodipodi:role="line"
+             id="tspan54747-7"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.416491"
+             x="62.8652"
+             y="130.04132">csc(x)dx</tspan></text>
+        <path
+           style="display:inline;opacity:0.99;fill:none;stroke:#32c209;stroke-width:1.2;stroke-linejoin:bevel;stroke-dasharray:none;stroke-opacity:1;paint-order:markers fill stroke"
+           d="m 78.550974,120.6887 36.565676,-0.0268"
+           id="path54751-6" />
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;display:inline;stroke-width:0.416491"
+           x="26.007586"
+           y="116.28258"
+           id="text54749-9"><tspan
+             sodipodi:role="line"
+             id="tspan54747-3"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.416491"
+             x="26.007586"
+             y="116.28258">csc(x)</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;display:inline;stroke-width:0.416491"
+           x="101.55347"
+           y="131.37585"
+           id="text54749-5-7"><tspan
+             sodipodi:role="line"
+             id="tspan54747-6-4"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.416491"
+             x="101.55347"
+             y="131.37585">cot(x)csc(x)dx</tspan></text>
+        <text
+           xml:space="preserve"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;line-height:1.25;font-family:FreeMono;-inkscape-font-specification:FreeMono;display:inline;stroke-width:0.416491"
+           x="81.422203"
+           y="117.1881"
+           id="text54749-9-5"><tspan
+             sodipodi:role="line"
+             id="tspan54747-3-2"
+             style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:3.95111px;font-family:FreeMono;-inkscape-font-specification:FreeMono;stroke-width:0.416491"
+             x="81.422203"
+             y="117.1881">csc(x)csc(x)dx</tspan></text>
+      </g>
+    </svg>
+
+  </div>
+  <br/>
+  <br/>
+  <br/>
+  <br/>
+  <p>Thank you for reading and I hope it was helpful.</p>
+</div>
+<script>
+  window.onload = function() {
+    var round = function(n) {
+      var v = Math.round(n * 100) / 100;
+      v.toFixed(2);
+      return v;
+    };
+
+    var parseDiagonalD = function(s) {
+      var s = s.split(' ');
+      var x1 = parseFloat(s[1].split(',')[0]);
+      var y1 = parseFloat(s[1].split(',')[1]);
+      var x2 = parseFloat(s[2].split(',')[0]);
+      var y2 = parseFloat(s[2].split(',')[1]);
+      return {
+        x1: x1,
+        y1: y1,
+        x2: x2,
+        y2: y2
+      };
+    }
+    var horizontalD = function(x, y, h) {
+      return 'M '+x.toString()+','+y.toString()+' H '+h.toString();
+    };
+    var verticalD = function(x, y, v) {
+      return 'M '+x.toString()+','+y.toString()+' V '+v.toString();
+    };
+    var diagonalD = function(x1,y1,x2,y2) {
+      return 'M '+x1.toString()+','+y1.toString()+' '+x2.toString() +','+ y2.toString();
+    };
+    var arcD = function(x1, y1, x2, y2, r) {
+      return 'm ' + x1.toString()+','+y1.toString()+' a '+r.toString()+','+r.toString()+' 0 0 1 ' + x2.toString() + ',' + y2.toString();
+    };
+
+    var linearFunc = function(x1, y1, x2, y2) {
+      var a = (y2-y1)/(x2-x1);
+      var b = y2 - a*x2;
+      return {
+        f: function(x) {
+          return a*x + b;
+        },
+        inverseF: function(y) {
+          return (y-b)/a;
+        },
+        circleIntersect: function(r) {
+          // y=ax+b
+          // x^2 + (ax+b)^2 = r^2
+          // xx + aaxx + 2abx + bb - rr = 0
+          // (1+aa)xx + (2ab)x + bb-rr = 0
+          //console.log('y = ' + a.toString() + 'x + ', b.toString());
+          var a_ = 1+a*a;
+          var b_ = 2*a*b;
+          var c_ = b*b - r*r;
+          var d = Math.sqrt(b_*b_ - 4*a_*c_);
+          var v = (-1*b_ - d) / (2*a_);
+          if (v >= 0) { return v; }
+          return (-1*b_ + d) / (2*a_);
+        },
+      }
+    };
+
+    (function () {
+      var mainEl = document.getElementById("triangles");
+      var fAdjecentEl = document.getElementById("triangles_Adjecent_1");
+      var sAdjecentEl = document.getElementById("triangles_Adjecent_2");
+      var fOppositeEl = document.getElementById("triangles_Opposite_1");
+      var sOppositeEl = document.getElementById("triangles_Opposite_2");
+      var fHypotenuseEl = document.getElementById("triangles_Hypotenuse_1");
+      var sHypotenuseEl = document.getElementById("triangles_Hypotenuse_2");
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var viewWidth = (function() {
+          var leftX = fOppositeEl.getBoundingClientRect().x;
+          var rightX = sOppositeEl.getBoundingClientRect().x;
+          return rightX - leftX;
+        })();
+        var fullWidth = mainEl.viewBox.baseVal.width;
+        var fullHeight = mainEl.viewBox.baseVal.height;
+        var scale =  fullWidth/viewWidth;
+        var touchpoint = scale * (event.x - mainEl.getBoundingClientRect().x);
+        if (fullWidth - touchpoint < 10 || touchpoint < 10) { return; }
+        fAdjecentEl.setAttribute('d', horizontalD(0, fullHeight - 0.8, touchpoint));
+        sAdjecentEl.setAttribute('d', horizontalD(touchpoint, fullHeight - 0.8, fullWidth - 0.5));
+        fOppositeEl.setAttribute('d', verticalD(0.5, fullHeight - touchpoint*3/4, fullHeight-0.5));
+        sOppositeEl.setAttribute('d', verticalD(fullWidth-0.8, fullHeight - (fullWidth-touchpoint)*4/3, fullHeight-0.5));
+        fHypotenuseEl.setAttribute('d', diagonalD(0, fullHeight - touchpoint*3/4, touchpoint, fullHeight - 0.8));
+        sHypotenuseEl.setAttribute('d', diagonalD(touchpoint, fullHeight - 0.5, fullWidth-0.5, fullHeight - (fullWidth-touchpoint)*4/3-0.5));
+      });
+    })();
+
+    (function () {
+      var mainEl = document.getElementById('tanAndSec1');
+      var circleEl = document.getElementById('tanAndSec1Circle');
+      var arcEl = document.getElementById('tanAndSec1Arc');
+      var hypotenuseEl = document.getElementById('tanAndSec1Hypotenuse');
+      var hypotenuseTextEl = document.getElementById('tanAndSec1HypotenuseText');
+      var hypotenusePointEl = document.getElementById('tanAndSec1HypotenusePoint');
+      var oppositeEl = document.getElementById('tanAndSec1Opposite');
+      var oppositeTextEl = document.getElementById('tanAndSec1OppositeText');
+      var xTextEl = document.getElementById('tanAndSec1XText');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var adjecent = event.x - circleViewpointX;
+
+        if (event.y >= circleViewpointY) { return null; }
+        var opposite = circleViewpointY - event.y;
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        opposite *= radius / adjecent;
+        hypotenuse *= radius / adjecent;
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        hypotenuseEl.setAttribute('d', diagonalD(cx, cy, cx+radius, cy-opposite));
+        hypotenusePointEl.setAttribute('cx', cx+radius);
+        hypotenusePointEl.setAttribute('cy', cy-opposite);
+        oppositeEl.setAttribute('d', verticalD(cx+radius, cy, cy-opposite));
+
+        (function(adj, opps, hyp, r) {
+          var adjecent = r *  adj / hyp;
+          var opposite = r * opps / hyp;
+          arcEl.setAttribute('d', arcD(cx+adjecent, cy-opposite, radius-adjecent, opposite, radius));
+        })(radius, opposite, hypotenuse, radius);
+
+        (function(adj, opps, hyp, r) {
+          var adjecent = r *  adj / hyp;
+          var opposite = r * opps / hyp;
+          xTextEl.setAttribute('x', cx+adjecent);
+          xTextEl.setAttribute('y', cy - 3*opposite/10);
+        })(radius, opposite, hypotenuse, 5);
+         
+        var v = radius * radius / (2 * hypotenuse);
+        hypotenuseTextEl.setAttribute('x', cx + v - 11*cx/(cx+v));
+        hypotenuseTextEl.setAttribute('y', cy - opposite * radius / (2*hypotenuse)-4);
+      });
+    })();
+
+    (function () {
+      var mainEl = document.getElementById('sinAndCos1');
+      var circleEl = document.getElementById('sinAndCos1Circle');
+      var arcEl = document.getElementById('sinAndCos1Arc');
+      var hypotenuseEl = document.getElementById('sinAndCos1Hypotenuse');
+      var hypotenuseTextEl = document.getElementById('sinAndCos1HypotenuseText');
+      var hypotenusePointEl = document.getElementById('sinAndCos1HypotenusePoint');
+      var oppositeEl = document.getElementById('sinAndCos1Opposite');
+      var oppositeTextEl = document.getElementById('sinAndCos1OppositeText');
+      var adjecentEl = document.getElementById('sinAndCos1Adjecent');
+      var adjecentTextEl = document.getElementById('sinAndCos1AdjecentText');
+      var adjecentPointEl = document.getElementById('sinAndCos1AdjecentPoint');
+      var textArcEl = document.getElementById("sinAndCos1XValText");
+      var xTextEl = document.getElementById('sinAndCos1XText');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var adjecent = event.x - circleViewpointX;
+
+        if (event.y >= circleViewpointY) { return null; }
+        var opposite = circleViewpointY - event.y;
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        var adjecent = adjecent * radius / hypotenuse;
+        var opposite = opposite * radius / hypotenuse;
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        hypotenuseEl.setAttribute('d', diagonalD(cx,cy,cx+adjecent,cy-opposite));
+        adjecentEl.setAttribute('d', horizontalD(cx,cy,cx+adjecent));
+        oppositeEl.setAttribute('d', verticalD(cx+adjecent,cy-opposite,cy));
+        arcEl.setAttribute('d', arcD(cx+adjecent, cy - opposite, radius-adjecent, opposite, radius));
+
+        hypotenusePointEl.setAttribute('cx', cx+adjecent);
+        hypotenusePointEl.setAttribute('cy', cy-opposite);
+        adjecentPointEl.setAttribute('cx', cx+adjecent);
+
+        hypotenuseTextEl.setAttribute('x', cx + adjecent/2 - 2);
+        hypotenuseTextEl.setAttribute('y', cy - opposite/2 - 2);
+        adjecentTextEl.setAttribute('x', cx + adjecent/2 - 2);
+        oppositeTextEl.setAttribute('x', cx + adjecent - 10.5);
+        oppositeTextEl.setAttribute('y', cx - opposite/2 + 6);
+
+        (function(adj, opps, hyp, r) {
+          var adjecent = r *  adj / hyp;
+          var opposite = r * opps / hyp;
+          xTextEl.setAttribute('x', cx+adjecent);
+          xTextEl.setAttribute('y', cy-opposite/2+0.7);
+        })(adjecent, opposite, hypotenuse, 15);
+
+        var v = round(Math.asin(opposite/radius));
+        textArcEl.textContent = 'x & L(Arc) = ' + v.toString()+'π';
+      });
+    })();
+
+    (function() {
+      var mainEl = document.getElementById('cotAndCsc1');
+      var circleEl = document.getElementById('cotAndCsc1Circle');
+      var arcEl = document.getElementById('cotAndCsc1Arc');
+      var hypotenuseEl = document.getElementById('cotAndCsc1Hypotenuse');
+      var hypotenuseTextEl = document.getElementById('cotAndCsc1HypotenuseText');
+      var hypotenusePointEl = document.getElementById('cotAndCsc1HypotenusePoint');
+      var oppositeEl = document.getElementById('cotAndCsc1Opposite');
+      var oppositeTextEl = document.getElementById('cotAndCsc1OppositeText');
+      var adjecentEl = document.getElementById('cotAndCsc1Adjecent');
+      var adjecentTextEl = document.getElementById('cotAndCsc1AdjecentText');
+      var adjecentPointEl = document.getElementById('cotAndCsc1AdjecentPoint');
+      var xTextEl = document.getElementById('cotAndCsc1XText');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var adjecent = event.x - circleViewpointX;
+
+        if (event.y >= circleViewpointY) { return null; }
+        var opposite = circleView.width/2;
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        var adjecent = radius * adjecent / opposite;
+        var hypotenuse = radius * hypotenuse / opposite;
+        var opposite = radius;
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        hypotenuseEl.setAttribute('d', diagonalD(cx,cy,cx+adjecent,cy-opposite));
+        adjecentEl.setAttribute('d', horizontalD(cx,cy,cx+adjecent));
+        oppositeEl.setAttribute('d', verticalD(cx+adjecent,cy-opposite,cy));
+        (function(adj, opps, hyp, r) {
+          var adjecent = r *  adj / hyp;
+          var opposite = r * opps / hyp;
+          arcEl.setAttribute('d', arcD(cx+adjecent, cy-opposite, radius-adjecent, opposite, radius));
+        })(adjecent, radius, hypotenuse, radius);
+        (function(adj, opps, hyp, r) {
+          var adjecent = r *  adj / hyp;
+          var opposite = r * opps / hyp;
+          xTextEl.setAttribute('x', cx+adjecent);
+          xTextEl.setAttribute('y', cy-opposite/2+0.7);
+        })(adjecent, opposite, hypotenuse, 5);
+
+        hypotenusePointEl.setAttribute('cx', cx+adjecent);
+        hypotenusePointEl.setAttribute('cy', cy-opposite);
+        adjecentPointEl.setAttribute('cx', cx+adjecent);
+
+        hypotenuseTextEl.setAttribute('x', cx + adjecent/2 - 11*cx/(cx+adjecent));
+        hypotenuseTextEl.setAttribute('y', cy - opposite/2 - 4);
+        adjecentTextEl.setAttribute('x', cx + adjecent/2 - 2);
+        adjecentTextEl.setAttribute('y', cy + 3);
+        oppositeTextEl.setAttribute('x', cx + adjecent + 2);
+        oppositeTextEl.setAttribute('y', cx - opposite/2 + 3);
+      });
+    })();
+    
+    (function () {
+      var mainEl = document.getElementById('sinAndCos2');
+      var circleEl = document.getElementById('sinAndCos2Circle');
+      var arcEl = document.getElementById('sinAndCos2Arc');
+      var hypotenuseEl = document.getElementById('sinAndCos2Hypotenuse');
+      var hypotenuseTextEl = document.getElementById('sinAndCos2HypotenuseText');
+      var oppositeEl = document.getElementById('sinAndCos2Opposite');
+      var oppositeTextEl = document.getElementById('sinAndCos2OppositeText');
+      var adjecentEl = document.getElementById('sinAndCos2Adjecent');
+      var adjecentTextEl = document.getElementById('sinAndCos2AdjecentText');
+      var xTextEl = document.getElementById('sinAndCos2XText');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var adjecent = event.x - circleViewpointX;
+
+        if (event.y >= circleViewpointY) { return null; }
+        var opposite = circleViewpointY - event.y;
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        var adjecent = adjecent * radius / hypotenuse;
+        var opposite = opposite * radius / hypotenuse;
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        hypotenuseEl.setAttribute('d', diagonalD(cx,cy,cx+adjecent,cy-opposite));
+        adjecentEl.setAttribute('d', horizontalD(cx,cy,cx+adjecent));
+        oppositeEl.setAttribute('d', verticalD(cx+adjecent,cy-opposite,cy));
+        arcEl.setAttribute('d', arcD(cx+adjecent, cy - opposite, radius-adjecent, opposite, radius));
+
+        hypotenuseTextEl.setAttribute('x', cx + adjecent/2 - 2);
+        hypotenuseTextEl.setAttribute('y', cy - opposite/2 - 2);
+        adjecentTextEl.setAttribute('x', cx + adjecent/2 - 2);
+        oppositeTextEl.setAttribute('x', cx + adjecent + 3);
+        oppositeTextEl.setAttribute('y', cy - opposite/2 + 3);
+
+        (function(adj, opps, hyp, r) {
+          var adjecent = r *  adj / hyp;
+          var opposite = r * opps / hyp;
+          xTextEl.setAttribute('x', cx+adjecent);
+          xTextEl.setAttribute('y', cy-3*opposite/10);
+        })(adjecent, opposite, hypotenuse, 18);
+      });
+    })();
+
+    (function () {
+      var mainEl = document.getElementById('sinAndCosDX');
+      var circleEl = document.getElementById('sinAndCosDXCircle');
+      var longHypotenuseEl = document.getElementById('sinAndCosDXHypotenuseLong');
+      var hypotenuseTextEl = document.getElementById('sinAndCosDXHypotenuseText');
+      var hypotenuseEl = document.getElementById('sinAndCosDXHypotenuse');
+      var oppositeEl = document.getElementById('sinAndCosDXOpposite');
+      var oppositePointEl = document.getElementById('sinAndCosDXOppositePoint');
+      var adjecentEl = document.getElementById('sinAndCosDXAdjecent');
+      var adjecentPointEl = document.getElementById('sinAndCosDXAdjecentPoint');
+      var fixedPointEl = document.getElementById('sinAndCosDXFixedPoint');
+      var tangentLineEl = document.getElementById('sinAndCosDXTangentLine');
+      var xParallelLineEl = document.getElementById('sinAndCosDXXParallel');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var adjecent = event.x - circleViewpointX;
+
+        if (event.y >= circleViewpointY) { return null; }
+        var opposite = circleViewpointY - event.y;
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        var adjecent = adjecent * radius / hypotenuse;
+        var opposite = opposite * radius / hypotenuse;
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        longHypotenuseEl.setAttribute('d', diagonalD(cx,cy,cx+adjecent,cy-opposite));
+        adjecentPointEl.setAttribute('cx', cx+adjecent);
+        adjecentPointEl.setAttribute('cy', cy-opposite);
+        var fpx = parseFloat(fixedPointEl.getAttribute('cx'));
+        var fpy = parseFloat(fixedPointEl.getAttribute('cy'));
+        hypotenuseEl.setAttribute('d', diagonalD(fpx, fpy, cx+adjecent, cy-opposite));
+        adjecentEl.setAttribute('d', horizontalD(fpx,cy-opposite,cx+adjecent));
+        oppositeEl.setAttribute('d', verticalD(fpx,cy-opposite,fpy));
+        oppositePointEl.setAttribute('cx', fpx);
+        oppositePointEl.setAttribute('cy', cy-opposite);
+
+        var line = linearFunc(cx+adjecent, cy-opposite, fpx, fpy);
+
+        tangentLineEl.setAttribute('d', diagonalD(cx, line.f(cx), line.inverseF(cy), cy));
+
+        xParallelLineEl.setAttribute('d', horizontalD(cx, cy-opposite, cx+radius*3));
+
+        hypotenuseTextEl.setAttribute('x', (fpx + cx + adjecent)/2);
+        hypotenuseTextEl.setAttribute('y', (fpy + cy - opposite)/2);
+      });
+    })();
+
+    (function () {
+      var mainEl = document.getElementById('tanAndSec2');
+      var circleEl = document.getElementById('tanAndSec2Circle');
+      var hypotenuseEl = document.getElementById('tanAndSec2Hypotenuse');
+      var hypotenuseTextEl = document.getElementById('tanAndSec2HypotenuseText');
+      var hypotenusePointEl = document.getElementById('tanAndSec2HypotenusePoint');
+      var oppositeEl = document.getElementById('tanAndSec2Opposite');
+      var xTextEl = document.getElementById('tanAndSec2XText');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var adjecent = event.x - circleViewpointX;
+
+        if (event.y >= circleViewpointY) { return null; }
+        var opposite = circleViewpointY - event.y;
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        opposite *= radius / adjecent;
+        hypotenuse *= radius / adjecent;
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        hypotenuseEl.setAttribute('d', diagonalD(cx, cy, cx+radius, cy-opposite));
+        hypotenusePointEl.setAttribute('cx', cx+radius);
+        hypotenusePointEl.setAttribute('cy', cy-opposite);
+        oppositeEl.setAttribute('d', verticalD(cx+radius, cy, cy-opposite));
+
+        (function(adj, opps, hyp, r) {
+          var adjecent = r *  adj / hyp;
+          var opposite = r * opps / hyp;
+          xTextEl.setAttribute('x', cx+adjecent);
+          xTextEl.setAttribute('y', cy - 3*opposite/10);
+        })(radius, opposite, hypotenuse, 5);
+
+         
+        var v = radius * radius / (2 * hypotenuse);
+        hypotenuseTextEl.setAttribute('x', cx + v - 11*cx/(cx+v));
+        hypotenuseTextEl.setAttribute('y', cy - opposite * radius / (2*hypotenuse)-4);
+      });
+    })();
+
+    (function () {
+      var mainEl = document.getElementById('tanAndSecDX');
+      var circleEl = document.getElementById('tanAndSecDXCircle');
+      var longHypotenuseEl = document.getElementById('tanAndSecDXHypotenuseLong');
+      var hypotenuseEl = document.getElementById('tanAndSecDXHypotenuse');
+      var dxTextEl = document.getElementById('tanAndSecDXText');
+      var oppositeEl = document.getElementById('tanAndSecDXOpposite');
+      var hypotenusePointEl = document.getElementById('tanAndSecDXHypotenusePoint');
+      var adjecentEl = document.getElementById('tanAndSecDXAdjecent');
+      var adjecentPointEl = document.getElementById('tanAndSecDXAdjecentPoint');
+      var fixedPointEl = document.getElementById('tanAndSecDXFixedPoint');
+      var tangentLineEl = document.getElementById('tanAndSecDXTangentLine');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var adjecent = event.x - circleViewpointX;
+
+        if (event.y >= circleViewpointY) { return null; }
+        var opposite = circleViewpointY - event.y;
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        var adjecent = adjecent * radius / hypotenuse;
+        var opposite = opposite * radius / hypotenuse;
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        var fpx = parseFloat(fixedPointEl.getAttribute('cx'));
+        var fpy = parseFloat(fixedPointEl.getAttribute('cy'));
+
+        var line = linearFunc(cx, cy, cx+adjecent, cy-opposite);
+        longHypotenuseEl.setAttribute('d', diagonalD(cx,cy,cx+radius,line.f(cx+radius)));
+        adjecentPointEl.setAttribute('cx', cx+adjecent);
+        adjecentPointEl.setAttribute('cy', cy-opposite);
+        hypotenuseEl.setAttribute('d', verticalD(fpx, fpy, line.f(fpx)));
+        adjecentEl.setAttribute('d', diagonalD(fpx, fpy, cx+adjecent, cy-opposite));
+        oppositeEl.setAttribute('d', diagonalD(cx+adjecent, cy-opposite, fpx, line.f(fpx)));
+        hypotenusePointEl.setAttribute('cy', line.f(fpx));
+
+        var line = linearFunc(cx+adjecent, cy-opposite, fpx, fpy);
+
+        tangentLineEl.setAttribute('d', diagonalD(cx, line.f(cx), line.inverseF(cy), cy));
+
+        dxTextEl.setAttribute('x', (fpx + cx + adjecent)/2-0.5);
+        dxTextEl.setAttribute('y', (fpy + cy - opposite)/2-1.2);
+      });
+    })();
+
+    (function () {
+      var mainEl = document.getElementById('tanAndSecDX2');
+      var circleEl = document.getElementById('tanAndSecDX2Circle');
+      var longHypotenuseNewEl = document.getElementById('tanAndSecDX2HypotenuseLineNew');
+      var hypotenuseOldEl = document.getElementById('tanAndSecDX2HypotenuseOld');
+      var hypotenuseEl = document.getElementById('tanAndSecDX2Hypotenuse');
+      var oppositeEl = document.getElementById('tanAndSecDX2Opposite');
+      var oppositePointEl = document.getElementById('tanAndSecDX2OppositePoint');
+      var hypotenusePointEl = document.getElementById('tanAndSecDX2HypotenusePoint');
+      var adjecentEl = document.getElementById('tanAndSecDX2Adjecent');
+      var adjecentPointEl = document.getElementById('tanAndSecDX2AdjecentPoint');
+      var tangentLineEl = document.getElementById('tanAndSecDX2TangentLine');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var scale = radius / (circleView.width/2);
+        var adjecent = scale * (event.x - circleViewpointX);
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        var parsed = parseDiagonalD(longHypotenuseNewEl.getAttribute('d'));
+        var newline = linearFunc(parsed.x1 - cx, cy - parsed.y1, parsed.x2 - cx, cy - parsed.y2);
+
+        if (event.y >= circleViewpointY) { return null; }
+        var opposite = newline.f(adjecent);
+
+        if (adjecent > radius) {
+          adjecent = radius;
+          opposite = cy - newline.f(radius);
+        } 
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        var parsed = parseDiagonalD(hypotenuseOldEl.getAttribute('d'));
+        var oldline = linearFunc(parsed.x1 - cx, cy - parsed.y1, parsed.x2 - cx, cy - parsed.y2);
+
+        var n3x = adjecent;
+        var n3y = newline.f(n3x);
+        var n2x = n3x;
+        var n2y = oldline.f(n2x);
+        var n1x = newline.circleIntersect(Math.sqrt(n2x*n2x + n2y*n2y));
+        var n1y = newline.f(n1x);
+
+        oppositePointEl.setAttribute('cx', cx+n3x);
+        oppositePointEl.setAttribute('cy', cy-n3y);
+
+        hypotenusePointEl.setAttribute('cx', cx+n2x);
+        hypotenusePointEl.setAttribute('cy', cy-n2y);
+
+        adjecentPointEl.setAttribute('cx', cx+n1x);
+        adjecentPointEl.setAttribute('cy', cy-n1y);
+
+        adjecentEl.setAttribute('d', diagonalD(cx+n1x, cy-n1y, cx+n2x, cy-n2y));
+
+        oppositeEl.setAttribute('d', diagonalD(cx+n1x, cy-n1y, cx+n3x, cy-n3y));
+
+        hypotenuseEl.setAttribute('d', verticalD(cx+n3x, cy-n3y, cy-n2y));
+
+        var line = linearFunc(n1x, n1y, n2x, n2y);
+        var x1 = 0;
+        var y1 = line.f(0);
+        if (y1 > radius) {
+          y1 = radius;
+          x1 = line.inverseF(radius);
+        }
+        var x2 = oldline.inverseF(radius);
+        var y2 = line.f(x2);
+        if (y2 < 0) {
+          y2 = 0;
+          x2 = line.inverseF(y2);
+        }
+        tangentLineEl.setAttribute('d', diagonalD(cx, cy-line.f(0), cx+line.inverseF(0), cy)); 
+      });
+    })();
+
+    (function() {
+      var mainEl = document.getElementById('cotAndCsc2');
+      var circleEl = document.getElementById('cotAndCsc2Circle');
+      var hypotenuseEl = document.getElementById('cotAndCsc2Hypotenuse');
+      var hypotenuseTextEl = document.getElementById('cotAndCsc2HypotenuseText');
+      var hypotenusePointEl = document.getElementById('cotAndCsc2HypotenusePoint');
+      var oppositeEl = document.getElementById('cotAndCsc2Opposite');
+      var oppositeTextEl = document.getElementById('cotAndCsc2OppositeText');
+      var adjecentEl = document.getElementById('cotAndCsc2Adjecent');
+      var adjecentTextEl = document.getElementById('cotAndCsc2AdjecentText');
+      var adjecentPointEl = document.getElementById('cotAndCsc2AdjecentPoint');
+      var xTextEl = document.getElementById('cotAndCsc2XText');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var adjecent = event.x - circleViewpointX;
+
+        if (event.y >= circleViewpointY) { return null; }
+        var opposite = circleView.width/2;
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        var adjecent = radius * adjecent / opposite;
+        var hypotenuse = radius * hypotenuse / opposite;
+        var opposite = radius;
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        hypotenuseEl.setAttribute('d', diagonalD(cx,cy,cx+adjecent,cy-opposite));
+        adjecentEl.setAttribute('d', horizontalD(cx,cy,cx+adjecent));
+        oppositeEl.setAttribute('d', verticalD(cx+adjecent,cy-opposite,cy));
+        (function(adj, opps, hyp, r) {
+          var adjecent = r *  adj / hyp;
+          var opposite = r * opps / hyp;
+          xTextEl.setAttribute('x', cx+adjecent);
+          xTextEl.setAttribute('y', cy-opposite/2+0.7);
+        })(adjecent, opposite, hypotenuse, 5);
+
+        hypotenusePointEl.setAttribute('cx', cx+adjecent);
+        hypotenusePointEl.setAttribute('cy', cy-opposite);
+        adjecentPointEl.setAttribute('cx', cx+adjecent);
+
+        hypotenuseTextEl.setAttribute('x', cx + adjecent/2 - 11*cx/(cx+adjecent));
+        hypotenuseTextEl.setAttribute('y', cy - opposite/2 - 4);
+        adjecentTextEl.setAttribute('x', cx + adjecent/2 - 2);
+        adjecentTextEl.setAttribute('y', cy + 3);
+        oppositeTextEl.setAttribute('x', cx + adjecent + 2);
+        oppositeTextEl.setAttribute('y', cx - opposite/2 + 3);
+      });
+    })();
+
+    (function () {
+      var mainEl = document.getElementById('cotAndCscDX');
+      var circleEl = document.getElementById('cotAndCscDXCircle');
+      var newLongHypotenuseEl = document.getElementById('cotAndCscDXNewHypotenuseLong');
+      var oldLongHypotenuseEl = document.getElementById('cotAndCscDXOldHypotenuseLong');
+      var hypotenuseEl = document.getElementById('cotAndCscDXHypotenuse');
+      var dxTextEl = document.getElementById('cotAndCscDXText');
+      var oppositeEl = document.getElementById('cotAndCscDXOpposite');
+      var oppositePointEl = document.getElementById('cotAndCscDXOppositePoint');
+      var hypotenusePointEl = document.getElementById('cotAndCscDXHypotenusePoint');
+      var adjecentEl = document.getElementById('cotAndCscDXAdjecent');
+      var fixedPointEl = document.getElementById('cotAndCscDXFixedPoint');
+      var tangentLineEl = document.getElementById('cotAndCscDXTangentLine');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var adjecent = event.x - circleViewpointX;
+
+        if (event.y >= circleViewpointY) { return null; }
+        var opposite = circleViewpointY - event.y;
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        var adjecent = adjecent * radius / hypotenuse;
+        var opposite = opposite * radius / hypotenuse;
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        var fpx = parseFloat(fixedPointEl.getAttribute('cx'));
+        var fpy = parseFloat(fixedPointEl.getAttribute('cy'));
+
+        var line = linearFunc(cx, cy, cx+adjecent, cy-opposite);
+        newLongHypotenuseEl.setAttribute('d', diagonalD(cx,cy,line.inverseF(cy-radius),cy-radius));
+        oppositePointEl.setAttribute('cx', cx+adjecent);
+        oppositePointEl.setAttribute('cy', cy-opposite);
+        var oldline = linearFunc(cx, cy, fpx, fpy);
+        oppositeEl.setAttribute('d', diagonalD(fpx, fpy, cx+adjecent, cy-opposite));
+        hypotenusePointEl.setAttribute('cx', oldline.inverseF(cy-opposite));
+        hypotenusePointEl.setAttribute('cy', cy-opposite);
+        hypotenuseEl.setAttribute('d', horizontalD(cx+adjecent, cy-opposite, oldline.inverseF(cy-opposite), cy-opposite));
+        adjecentEl.setAttribute('d', diagonalD(fpx, fpy, oldline.inverseF(cy-opposite), cy-opposite));
+
+        var line = linearFunc(cx+adjecent, cy-opposite, fpx, fpy);
+        tangentLineEl.setAttribute('d', diagonalD(cx, line.f(cx), line.inverseF(cy), cy));
+
+        var adjustment = 6*radius/(radius + opposite);
+        dxTextEl.setAttribute('x', (fpx + cx + adjecent)/2-adjustment);
+        dxTextEl.setAttribute('y', (fpy + cy - opposite)/2+adjustment-1);
+        console.log('opposite', opposite);
+      });
+    })();
+
+    (function () {
+      var mainEl = document.getElementById('cotAndCscDX2');
+      var circleEl = document.getElementById('cotAndCscDX2Circle');
+      var longHypotenuseNewEl = document.getElementById('cotAndCscDX2LongHypotenuseNew');
+      var hypotenuseOldEl = document.getElementById('cotAndCscDX2LongHypotenuseOld');
+      var hypotenuseEl = document.getElementById('cotAndCscDX2Hypotenuse');
+      var oppositeEl = document.getElementById('cotAndCscDX2Opposite');
+      var oppositePointEl = document.getElementById('cotAndCscDX2OppositePoint');
+      var hypotenusePointEl = document.getElementById('cotAndCscDX2HypotenusePoint');
+      var adjecentEl = document.getElementById('cotAndCscDX2Adjecent');
+      var adjecentPointEl = document.getElementById('cotAndCscDX2AdjecentPoint');
+      var tangentLineEl = document.getElementById('cotAndCscDX2TangentLine');
+
+      mainEl.addEventListener('mousemove', function(event) {
+        var circleView = circleEl.getBoundingClientRect();
+        var radius = parseFloat(circleEl.getAttribute('r'));
+        var circleViewpointX = circleView.x + circleView.width/2;
+        var circleViewpointY = circleView.y + circleView.width/2;
+
+        if (event.x <= circleViewpointX) { return null; }
+        var scale = radius / (circleView.width/2);
+        var adjecent = scale * (event.x - circleViewpointX);
+
+        var cx = parseFloat(circleEl.getAttribute('cx'));
+        var cy = parseFloat(circleEl.getAttribute('cy'));
+
+        var parsed = parseDiagonalD(longHypotenuseNewEl.getAttribute('d'));
+        var newline = linearFunc(parsed.x1 - cx, cy - parsed.y1, parsed.x2 - cx, cy - parsed.y2);
+
+        var opposite = newline.f(adjecent);
+
+        if (opposite > radius) {
+          opposite = radius;
+          adjecent = newline.inverseF(opposite);
+        }
+
+        var hypotenuse = Math.sqrt(adjecent*adjecent + opposite*opposite);
+
+        var parsed = parseDiagonalD(hypotenuseOldEl.getAttribute('d'));
+        var oldline = linearFunc(parsed.x1 - cx, cy - parsed.y1, parsed.x2 - cx, cy - parsed.y2);
+
+        var n1x = newline.circleIntersect(hypotenuse);
+        var n1y = newline.f(n1x);
+        var n2x = oldline.circleIntersect(hypotenuse);
+        var n2y = oldline.f(n2x);
+
+        oppositePointEl.setAttribute('cx', cx+n1x);
+        oppositePointEl.setAttribute('cy', cy-n1y);
+
+        hypotenusePointEl.setAttribute('cx', cx+oldline.inverseF(n1y));
+        hypotenusePointEl.setAttribute('cy', cy-n1y);
+
+        adjecentPointEl.setAttribute('cx', cx+n2x);
+        adjecentPointEl.setAttribute('cy', cy-n2y);
+
+        adjecentEl.setAttribute('d', diagonalD(cx+n2x, cy-n2y, cx+oldline.inverseF(n1y), cy-n1y));
+
+        oppositeEl.setAttribute('d', diagonalD(cx+n1x, cy-n1y, cx+n2x, cy-n2y));
+
+        hypotenuseEl.setAttribute('d', horizontalD(cx+n1x, cy-n1y, cx+oldline.inverseF(n1y)));
+
+        var line = linearFunc(n1x, n1y, n2x, n2y);
+        var x1 = 0;
+        var y1 = line.f(0);
+        if (y1 > radius) {
+          y1 = radius;
+          x1 = line.inverseF(radius);
+        }
+        var x2 = oldline.inverseF(radius);
+        var y2 = line.f(x2);
+        if (y2 < 0) {
+          y2 = 0;
+          x2 = line.inverseF(y2);
+        }
+        tangentLineEl.setAttribute('d', diagonalD(cx+x1, cy-y1, cx+x2, cy-y2)); 
+
+      });
+    })();
+  };
+</script>
+<style>
+@media (max-width: 550px) {
+  .unit-circle {
+    width: 120%;
+    height: 120%;
+  }
+  .triangles {
+    width: 100%;
+    height: 100%;
+  }
+}
+</style>

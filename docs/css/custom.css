@@ -1,6 +1,7 @@
 html * {
-  font-family: "mono";
+  font-family: "Ralevey";
 }
+
 .container {
   padding-top: 3rem;
 }
@@ -8,11 +9,17 @@ html * {
 #home {
   letter-spacing: -0.1rem;
   line-height: 1.5rem;
+  width: fit-content;
 }
 
 #home a {
   text-decoration: none;
-  font-family: sans-serif;
+}
+
+.contents h5 {
+  text-align: center;
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 nav ul {
@@ -37,17 +44,20 @@ a:hover, a:focus {
   .container{
     width: 80%;
   }
+  #home {
+    font-size: 1.3rem;
+  }
 }
 
 @media (min-width: 800px) {
-  #home {
-    font-size: 1.5rem;
-  }
   .container{
     width: 90%;
   }
-  div.contents {
-    padding-top: 0.4rem;
+  #home {
+    font-size: 1.2rem;
+  }
+  div.contents h5 {
+    text-alight: center;
   }
   .navcontainer{
     position: fixed;
@@ -60,7 +70,9 @@ a:hover, a:focus {
 
 @media (max-width: 800px) {
   #home {
-    font-size: 1.5rem;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 1.2rem;
     margin-bottom: 1rem;
   }
   div.contents {
@@ -81,5 +93,11 @@ a:hover, a:focus {
 @media (max-width: 400px) {
   #home {
     font-size: 1.1rem;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1rem;
+  }
+  .container {
+    width: 95%;
   }
 }
