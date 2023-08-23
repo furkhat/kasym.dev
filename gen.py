@@ -23,7 +23,7 @@ def make(dirp):
     if not make_cache:
         text = readpath(firsthtml(DIR_IN))
         i = text.find('<head>')+len('<head>')+1
-        j = text.find('></div>')+1
+        j = text.find('></body>')+1
         make_cache.extend([text[:i], text[i:j], text[j:]])
 
     (a, b, c) = make_cache
